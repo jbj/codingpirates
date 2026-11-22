@@ -39,8 +39,8 @@
         <span class="saved-badge" id="storage-status">Progress saved on this browser</span>
       </div>
       <div class="progress-panel">
-        <div class="progress-copy"><strong id="progress-text" role="status" aria-live="polite">0 of 6 missions complete</strong><span id="progress-message">Every great game starts with a first step.</span></div>
-        <progress id="progress" value="0" max="6" aria-label="Completed missions">0 of 6</progress>
+        <div class="progress-copy"><strong id="progress-text" role="status" aria-live="polite">0 of 8 missions complete</strong><span id="progress-message">Every great game starts with a first step.</span></div>
+        <progress id="progress" value="0" max="8" aria-label="Completed missions">0 of 8</progress>
       </div>
       <noscript><p class="notice">Enable JavaScript to save your progress and see celebrations. You can still follow all the missions below.</p></noscript>
 
@@ -56,14 +56,23 @@
 
         <article class="mission">
           <div class="mission-top"><span class="mission-number">02</span><span class="tag">MEET YOUR CO-BUILDER</span></div>
-          <h3>Open the Copilot App</h3>
-          <p>Open your <strong>new repository</strong> in the Copilot App. This is your workshop: a place to talk about ideas, change the project, and use its terminal.</p>
-          <p class="hint">GitHub is where your project lives. The Copilot App is where you work on it. You don’t need to learn Git to start.</p>
-          <label class="check-row"><input type="checkbox" data-step="copilot"><span>My project is open in Copilot</span></label>
+          <h3>Download the Copilot App</h3>
+          <p>On your Windows laptop, download the <strong>Windows (x64)</strong> installer from GitHub. Open the downloaded <code>.exe</code>, follow the setup steps, then launch the app and sign in to GitHub.</p>
+          <a class="text-link" href="https://github.com/github/app#install">Download the official Copilot App <span aria-hidden="true">↗</span></a>
+          <p class="hint">If your Windows laptop uses an ARM processor, choose the Windows (ARM) download instead.</p>
+          <label class="check-row"><input type="checkbox" data-step="download"><span>I’ve installed and opened Copilot</span></label>
         </article>
 
         <article class="mission">
-          <div class="mission-top"><span class="mission-number">03</span><span class="tag">POWER UP</span></div>
+          <div class="mission-top"><span class="mission-number">03</span><span class="tag">BRING YOUR PROJECT</span></div>
+          <h3>Load your repository</h3>
+          <p>In the Copilot App, choose <strong>Add GitHub repository</strong>. Sign in if asked, find the new repository you created, and add it. When it appears in the app, select it to start working in that project.</p>
+          <p class="hint">GitHub is where your project lives. The Copilot App connects a local copy so you can ask Copilot to change it.</p>
+          <label class="check-row"><input type="checkbox" data-step="copilot"><span>My new repository is open in Copilot</span></label>
+        </article>
+
+        <article class="mission">
+          <div class="mission-top"><span class="mission-number">04</span><span class="tag">POWER UP</span></div>
           <h3>Install Node.js</h3>
           <p>On your Windows laptop, download the <strong>current Node.js LTS</strong> version. Choose the Windows installer and accept its defaults. Node.js runs your project.</p>
           <a class="text-link" href="https://nodejs.org/en/download/">Get Node.js LTS <span aria-hidden="true">↗</span></a>
@@ -72,7 +81,7 @@
         </article>
 
         <article class="mission">
-          <div class="mission-top"><span class="mission-number">04</span><span class="tag">FIRST LAUNCH</span></div>
+          <div class="mission-top"><span class="mission-number">05</span><span class="tag">FIRST LAUNCH</span></div>
           <h3>Bring your page to life</h3>
           <p>Run these commands, one at a time, in the Copilot App terminal:</p>
           <div class="code-block"><div class="code-heading"><span>TERMINAL</span><button type="button" class="copy-button" data-copy="commands">Copy commands</button></div><pre id="commands"><code>npm ci
@@ -83,32 +92,27 @@ npm run dev</code></pre></div>
         </article>
 
         <article class="mission mission-wide">
-          <div class="mission-top"><span class="mission-number">05</span><span class="tag">THE FUN PART</span></div>
+          <div class="mission-top"><span class="mission-number">06</span><span class="tag">THE FUN PART</span></div>
           <h3>Ask Copilot to build a game</h3>
           <p>Open the Copilot App chat for your repository. Copy this starter prompt and send it. You’re the game designer; Copilot can make the changes in your project.</p>
-          <div class="code-block"><div class="code-heading"><span>YOUR GAME BRIEF</span><button type="button" class="copy-button" data-copy="game-prompt">Copy prompt</button></div><pre id="game-prompt">Create a complete, fun browser game named Star Catcher in this project.
-Edit the files to build it, rather than only explaining how.
-
-Move a basket along the bottom to catch falling stars. Support the left/right
-arrow keys and A/D, plus large touchscreen buttons for moving left and right.
-Each caught star earns one point. Hitting a falling rock ends the game.
-Display the score, an obvious game-over message, and a play-again button.
-
-Keep the existing TypeScript and Vite setup. Add no packages or online services.
-Use CSS or simple shapes instead of external images or sounds. Support phones
-and laptops, allow browser zoom, use readable colors and text, and make the
-buttons work with both keyboard and touch.
-
-Run the project's checks when finished. If missing Google Chrome prevents full
-verification, explain that but still let me try the game. Start a local preview
-if possible, play-test it, and fix any problems. Explain what changed, the
-controls, and whether verification and the preview worked.</pre></div>
+          <div class="code-block"><div class="code-heading"><span>YOUR GAME BRIEF</span><button type="button" class="copy-button" data-copy="game-prompt">Copy prompt</button></div><pre id="game-prompt">Build a fun, responsive browser game called Star Catcher in this project.
+Move a basket to catch falling stars and avoid rocks. Include keyboard and
+touch controls, a score, a game-over message, and a play-again button.
+Use the project's existing setup.</pre></div>
           <p class="hint">No application services to configure. No need to know how to code. Start with this idea, then ask Copilot to make it your own.</p>
           <label class="check-row"><input type="checkbox" data-step="build"><span>I’ve asked Copilot to build Star Catcher</span></label>
         </article>
 
         <article class="mission mission-wide finale">
-          <div class="mission-top"><span class="mission-number">06</span><span class="tag">YOU MADE A GAME!</span></div>
+          <div class="mission-top"><span class="mission-number">07</span><span class="tag">PUT IT ON THE WEB</span></div>
+          <h3>Publish with GitHub Pages</h3>
+          <p>Ask Copilot to publish your finished game using this project’s <strong>Deploy</strong> workflow. On GitHub, open your repository’s <strong>Settings → Pages</strong> and set the source to <strong>GitHub Actions</strong>. If Actions are disabled, enable them in <strong>Settings → Actions → General</strong>.</p>
+          <p>Review and merge Copilot’s pull request if it creates one. In the repository’s <strong>Actions</strong> tab, wait for <strong>CI / Verify</strong> and <strong>Deploy</strong> to succeed. Then open the website address shown in <strong>Settings → Pages</strong> and share your game! If Deploy doesn’t start the first time, run it from the Actions tab after CI / Verify succeeds.</p>
+          <label class="check-row"><input type="checkbox" data-step="publish"><span>My game is published on GitHub Pages</span></label>
+        </article>
+
+        <article class="mission mission-wide">
+          <div class="mission-top"><span class="mission-number">08</span><span class="tag">YOU MADE A GAME!</span></div>
           <h3>Play. Experiment. Repeat.</h3>
           <p>Keep <code>npm run dev</code> running and open its printed address in your browser. Microsoft Edge works fine. Catch some stars, dodge the rocks, and try beating your score!</p>
           <p>Want a twist? Ask Copilot for a new color scheme, a different challenge, or your own game idea.</p>
@@ -116,13 +120,13 @@ controls, and whether verification and the preview worked.</pre></div>
           <label class="check-row"><input type="checkbox" data-step="play"><span>I’ve played my game!</span></label>
         </article>
       </div>
-      <div class="finish-message" id="finish-message" hidden><span aria-hidden="true">✦</span><h2>From idea to game. You did that.</h2><p>All six missions complete. Keep experimenting — your next idea is waiting.</p></div>
+      <div class="finish-message" id="finish-message" hidden><span aria-hidden="true">✦</span><h2>From idea to game. You did that.</h2><p>All eight missions complete. Keep experimenting — your next idea is waiting.</p></div>
     </section>
 
     <section class="next-level" aria-labelledby="next-title">
       <p class="eyebrow">THERE’S MORE WHEN YOU’RE READY</p><h2 id="next-title">Your next level</h2>
       <details><summary>Check and build your project</summary><p>Run <code>npm run verify</code> to check the project, or <code>npm run build</code> to produce publishable files. Full local verification needs Google Chrome, but you can make and play the game without it.</p><p>GitHub runs checks on pull requests and pushes to <code>main</code>. Normal checks use Linux; maintainers can manually run Windows verification too. See the <a href="https://github.com/jbj/typescript-static-template/blob/main/docs/code.md#local-and-ci-environments">template’s Chrome and environment guide</a>.</p></details>
-      <details><summary>Maintainer mission: publish and protect your app</summary><p>Templates copy files, not repository settings. In your new project:</p><ol><li>Rename the package with <code>npm pkg set name=your-app</code> and update its lockfile with <code>npm install --package-lock-only</code>. Update the ruleset examples, the path example in <code>vite.config.ts</code>, and the owner in <code>.github/CODEOWNERS</code>.</li><li>Adapt the working agreement and documentation to your app. Retain the original MIT copyright notice and add attribution as appropriate.</li><li>Enable GitHub Actions. In <strong>Settings → Pages → Source</strong>, select <strong>GitHub Actions</strong>. The source README also provides administrator CLI commands.</li><li>Push the initial app to <code>main</code> and wait for <strong>CI / Verify</strong> to pass. If its completion trigger wasn’t present yet, run <strong>Deploy</strong> manually once. Manual deployment also needs successful push CI for that exact <code>main</code> commit.</li><li>Apply and read back the checked-in main ruleset after publication. Its required check is <strong>Verify</strong>; solo maintainers need no human approval. Review CODEOWNERS and the policy before using them with a team.</li></ol><p>Deployment publishes the exact successful <code>main</code> push commit, not a tag or build branch. The workflow token cannot configure Pages or branch rules. A relative Vite base supports different repository names.</p><a href="https://github.com/jbj/typescript-static-template#for-repository-maintainers">Full maintainer instructions and linked policies ↗</a></details>
+      <details><summary>Maintainer mission: protect your app</summary><p>Templates copy files, not repository settings. In your new project:</p><ol><li>Rename the package with <code>npm pkg set name=your-app</code> and update its lockfile with <code>npm install --package-lock-only</code>. Update the ruleset examples, the path example in <code>vite.config.ts</code>, and the owner in <code>.github/CODEOWNERS</code>.</li><li>Adapt the working agreement and documentation to your app. Retain the original MIT copyright notice and add attribution as appropriate.</li><li>Apply and read back the checked-in main ruleset after publication. Its required check is <strong>Verify</strong>; solo maintainers need no human approval. Review CODEOWNERS and the policy before using them with a team.</li></ol><a href="https://github.com/jbj/typescript-static-template#for-repository-maintainers">Full maintainer instructions and linked policies ↗</a></details>
       <details><summary>Find the project’s working agreement</summary><p>Start with <code>AGENTS.md</code> in your new project. It links to <code>.github/copilot-instructions.md</code>, focused documentation topics, and decision records.</p><a href="https://github.com/jbj/typescript-static-template#working-agreement">Explore the template’s working agreement ↗</a></details>
     </section>
     <p id="copy-status" role="status" aria-live="polite"></p>

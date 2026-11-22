@@ -10,10 +10,12 @@ const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 const messages = [
   "Every great game starts with a first step.",
   "Your idea has a home. Onward!",
-  "Your workshop is ready. Let’s power it up.",
+  "Copilot is installed. Bring your project into the app.",
+  "Your project is connected. Let’s power it up.",
   "Tools ready. Time for your first launch.",
   "It’s alive! Now give it something fun to do.",
-  "One more mission: take your creation for a spin.",
+  "Your game is ready. Let’s publish it.",
+  "Your game is online. Take it for a spin.",
   "All missions complete. You’re a game creator!",
 ];
 
