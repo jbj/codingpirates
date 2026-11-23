@@ -3,7 +3,7 @@ Teaching materials
 
 ## GitHub vibecoding
 
-An interactive, eight-mission guide to building your first web app with
+An interactive guide to building your first web app with
 [the TypeScript static template](https://github.com/jbj/typescript-static-template).
 Includes checkboxes saved in browser local storage, completion confetti, and
 optional verification and maintainer guidance. No dependencies or build step.

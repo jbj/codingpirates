@@ -32,6 +32,7 @@ try {
 
 function updateProgress() {
   const completed = checkboxes.filter((checkbox) => checkbox.checked).length;
+  progress.max = checkboxes.length;
   progress.value = completed;
   progress.textContent = `${completed} of ${checkboxes.length}`;
   progressText.textContent = `${completed} of ${checkboxes.length} missions complete`;
